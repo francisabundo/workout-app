@@ -14,10 +14,17 @@
 }
 
 body {
-  background: #f1f1f1;
+  
+  /* background: #f1f1f1; */
+  background: rgb(69,73,109);
+background: linear-gradient(354deg, rgba(69,73,109,1) 46%, rgba(221,221,221,1) 100%);
+
+
   margin: 0;
   font-family: "Poppins"
 }
+
+
 
 header{
   background: #ff;
@@ -37,7 +44,9 @@ header a {
   text-decoration: none;
 }
 
-
+.container h1{
+  color: #111;
+}
 .pages {
   max-width:1400px;
   padding: 20px;
@@ -53,7 +62,7 @@ header a {
 }
 
 .workout-details {
-  background: #fff;
+  background-color: black;
   border-radius:4px;
   margin: 20px auto;
   padding: 20px;
@@ -63,14 +72,14 @@ header a {
 
 .workout-details h4 {
   margin: 0 0 10px 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--primary)
 }
 
 .workout-details p {
   margin: 0;
   font-size: 0.9rem;
-  color: #555;
+  color: #ccc;
 }
 
 .workout-details span{
@@ -98,7 +107,7 @@ input {
   box-sizing: border-box;
 }
 form button {
-  background: var(--primary);
+  background: black;
   border: 0;
   color: #fff;
   padding: 10px;
@@ -117,4 +126,14 @@ div.error {
 input.error {
   border: 1px solid var(--error);
 }
+
+.create h3{
+  color: #111;
+}
+
+label{
+  color: #000;
+}
+
+
 
