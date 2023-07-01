@@ -58,7 +58,7 @@ header a {
 .home {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 100px
+  gap: 100px;
 }
 
 .workout-details {
@@ -78,11 +78,83 @@ header a {
 
 .workout-details p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding-top: 0.2rem;
   color: #ccc;
 }
 
 .workout-details span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* workout-details-b */
+
+.workout-details-b {
+  background-color: #90165B;
+  border-radius:4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.workout-details-b h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  color: var(--primary)
+}
+
+.workout-details-b p {
+  margin: 0;
+  font-size: 1rem;
+  padding-top: 0.2rem;
+  color: #ccc;
+}
+
+.workout-details-b span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* workout-details-c */
+
+.workout-details-c {
+  background-color: #333;
+  opacity: 0.8;
+  border-radius:4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.workout-details-c h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  color: var(--primary)
+}
+
+.workout-details-c p {
+  margin: 0;
+  font-size: 1rem;
+  color: #eee;
+  padding-top: 0.2rem;
+}
+
+.workout-details-c span{
   position: absolute;
   top: 20px;
   right: 20px;
@@ -131,6 +203,12 @@ input.error {
   color: #13ac83;
 }
 
+.create button{
+  display: block;
+  margin-top: 20px
+}
+
+
 label{
   color: #fff;
 }
@@ -146,9 +224,9 @@ nav a {
 }
 
 nav button {
-  background: #fff;
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  background: #444;
+  border: 0;
+  color: #fff;
   padding: 6px 10px;
   border-radius: 4px;
   font-family: "Poppins";
@@ -178,3 +256,13 @@ form.login h3 {
   color: #13ac83;
 }
 
+.filterSection button {
+  background: #444;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
