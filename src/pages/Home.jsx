@@ -12,8 +12,10 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState('all');
 
   useEffect(() => {
+
     const fetchWorkouts = async () => {
-      const url = activeTab === 'all' ? '/api/workouts' : `/api/workouts?type=${activeTab}`;
+      
+      const url = activeTab === 'all' ? `${process.env.REACT_APP_API_URL}/api/workouts` : `${process.env.REACT_APP_API_URL}/api/workouts?type=${activeTab}`;
       const response = await fetch(url, {
         headers: { Authorization: `Bearer ${user.token}` },
       });
